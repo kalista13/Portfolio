@@ -1,0 +1,24 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  //width: 100vw;
+  //height: 100vh;
+}
+
+/* Make main content fill remaining space and stack content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+/* Optional: remove default margins from body/html */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}

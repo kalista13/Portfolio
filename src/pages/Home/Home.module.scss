@@ -1,0 +1,65 @@
+@use '../../assets/styles/variables' as *;  // import variables
+
+.home {
+  display: flex;
+  justify-content: center; /* center vertically */
+  align-items: center; 
+  flex-direction: column;
+  height: 100vh; /* full screen height */
+  background: linear-gradient(
+    to bottom,
+    rgba(35, 1, 44, 1) 0%,
+    rgba(124, 64, 64, 1) 100%
+  );
+}
+
+.main {
+  text-align: left; // aligns text to the right
+  margin-bottom: 150px;
+}
+
+.name {
+  font-size: 100px;
+  font-family: 'Lexend Giga', sans-serif;
+  color: #CABAA8;
+  margin-top: 1rem;
+}
+
+.intro {
+  font-size: 22px;
+  font-family: 'Libre Franklin', sans-serif;
+  color: white;
+  margin-left: 10px;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-left: 25px;
+
+  img {
+    width: 40px; /* make them equal size */
+    height: 40px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2); /* slight zoom on hover */
+    }
+  }
+  .resumeBtn {
+    padding: 0.5rem 2rem;
+    background-color: #CABAA8;
+    margin-left: 60px;
+    color: $text-color;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $text-color;
+      color: #fff;
+    }
+  }
+}

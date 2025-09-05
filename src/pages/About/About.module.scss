@@ -1,0 +1,68 @@
+.about {
+    display: flex;
+    justify-content: center; /* center vertically */
+    align-items: center; 
+    padding-top: 20px;
+    flex-direction: column;
+    height: 100vh; /* full screen height */
+    background: linear-gradient(
+        to bottom,
+        rgba(124, 64, 64, 1) 0%,
+        rgba(35, 1, 44, 1) 100% 
+    );
+}
+
+.head{
+    font-size: 40px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.para{
+    color: white;
+    max-width: 900px;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.25rem;
+    padding: 0 20px;
+    margin-bottom: 100px;   
+}
+
+.skillsHead {
+    font-size: 36px;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.skills {
+    display: flex;
+    gap: 40px; /* spacing between skill items */
+    justify-content: center;
+    flex-wrap: wrap; /* wrap on smaller screens */
+    margin-bottom: 40px;
+}
+
+.skillItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Libre Franklin', sans-serif;
+
+    span {
+    font-size: 0.7rem; /* smaller text */
+    margin-top: 5px;
+    opacity: 0.8; /* optional: make it a bit lighter */
+  }
+}
+
+.skillIcon {
+    font-size: 36px;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}

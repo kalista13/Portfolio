@@ -1,0 +1,7 @@
+@use '../../assets/styles/variables' as *;
+.footer {
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: $primary-color;
+  color: greenyellow;
+}

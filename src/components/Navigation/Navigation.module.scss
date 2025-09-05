@@ -1,0 +1,31 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end; 
+  background-color: transparent;
+  z-index: 1000;
+  margin-top: 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  color:white;
+
+  a {
+    font-size: 1rem;
+    font-family: 'Libre Franklin', sans-serif;
+    color: white; /* now applied directly to links */
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #CABAA8;
+    }
+  }
+}
