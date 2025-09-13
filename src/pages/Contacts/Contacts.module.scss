@@ -1,0 +1,102 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 100px;
+  //min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(35, 1, 44, 1) 0%,
+    rgba(124, 64, 64, 1) 100%
+  );
+  color: white;
+}
+
+.contactsHeader {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contactsHeading {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #ddd;
+  font-weight: 400;
+}
+
+.contactsSubheading {
+  font-size: 36px;
+  margin-bottom: 20px;
+  //font-weight: 600;
+}
+
+.contactsContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.contactsLeft {
+  flex: 1;
+  max-width: 520px;
+}
+
+.contactItem {
+  margin-left: 170px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contactIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 30px;
+}
+
+.contactText {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.contactLink {
+  font-size: 18px;
+  color: #0a66c2; /* Linkedin blue */
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.contactsRight {
+  margin-right:100px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contactPhoto {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.12);
+}
+
+//
+@media (max-width: 900px) {
+  .contactsContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactsLeft {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
