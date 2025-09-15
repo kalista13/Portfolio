@@ -31,7 +31,7 @@ export default function Home() {
             <img src={email} alt="Email" />
           </a>
           <a
-            href="/resume.pdf"
+            href="public/assets/images/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.resumeBtn}
