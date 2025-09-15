@@ -18,7 +18,7 @@ export default function Contacts() {
           <div className={styles.contactItem}>
             <img src="assets/images/linkedin.png" alt="LinkedIn" className={styles.contactIcon} />
             <a
-              href="www.linkedin.com/in/kalista-singh-cs13"
+              href="https://www.linkedin.com/in/kalista-singh-cs13/"
               target="_blank"
               className={styles.contactLink}
             >
