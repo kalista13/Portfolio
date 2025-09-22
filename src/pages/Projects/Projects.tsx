@@ -9,15 +9,15 @@ export default function Projects() {
       github: "https://github.com/kalista13/Portfolio#"
     },
     {
-      title: "App",
+      title: "3D renderer",
       img: "/assets/images/photo2.png",
-      desc: "Weather app",
+      desc: "A 3D renderer made from scratch in C, implementing ray tracing, semi-realistic lighting, shadows, and anti-aliasing.",
       github: "https://github.com/kalista13/Portfolio#"
     },
     {
-      title: "app2",
+      title: "Tweet Management System",
       img: "/assets/images/photo2.png",
-      desc: "an app",
+      desc: "MongoDB-based data management system to search, and analyze large tweet datasets with batch JSON processing and real-time querying.",
       github: "https://github.com/kalista13/Portfolio#"
     },
 
