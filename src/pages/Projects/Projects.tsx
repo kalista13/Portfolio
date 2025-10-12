@@ -9,16 +9,18 @@ export default function Projects() {
       github: "https://github.com/kalista13/Portfolio#"
     },
     {
-      title: "3D renderer",
-      img: "/assets/images/photo2.png",
-      desc: "A 3D renderer made from scratch in C, implementing ray tracing, semi-realistic lighting, shadows, and anti-aliasing.",
-      github: "https://github.com/kalista13/Portfolio#"
+      title: "Emotions App",
+      img: "/assets/images/image 31.png",
+      //desc: "A 3D renderer made from scratch in C, implementing ray tracing, semi-realistic lighting, shadows, and anti-aliasing.",
+      desc: "An app built with Java that let's you log and view your emotion summary.",
+      github: "https://github.com/kalista13/Emojilog#"
     },
     {
-      title: "Tweet Management System",
-      img: "/assets/images/photo2.png",
-      desc: "MongoDB-based data management system to search, and analyze large tweet datasets with batch JSON processing and real-time querying.",
-      github: "https://github.com/kalista13/Portfolio#"
+      title: "Club Website",
+      img: "/assets/images/image 32.png",
+      //desc: "MongoDB-based data management system to search, and analyze large tweet datasets with batch JSON processing and real-time querying."
+      desc:"An interactive and responsive website built with React, TyprScript, and SCSS for MissionSpace Walker",
+      github: "https://github.com/kalista13/MSWUA#"
     },
 
   ];

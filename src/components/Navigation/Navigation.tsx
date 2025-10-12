@@ -1,7 +1,21 @@
 //import { Link } from "react-router-dom";
 import styles from './Navigation.module.scss';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) setScrolled(true);
+      else setScrolled(false);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const handleScroll = (e: React.MouseEvent, id: string) => {
     e.preventDefault();  // preventDefault() stops the browser from jumping instantly to the section
     const el = document.getElementById(id);
@@ -9,7 +23,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${scrolled ? styles.opaque : ''}`}>
       <div className={styles['nav-links']}>
         <a href="#Home" onClick={(e) => handleScroll(e, 'Home')}>Home</a>
         <a href="#About" onClick={(e) => handleScroll(e, 'About')}>About</a>
