@@ -49,6 +49,8 @@ export default function About() {
             <span>Android Studio</span>
             <span>Git</span>
             <span>GitHub</span>
+            <span>Linux</span>
+            <span>Docker</span>
           </div>
         </div>
 
