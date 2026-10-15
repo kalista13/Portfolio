@@ -1,15 +1,16 @@
 .about {
-    display: flex;
-    justify-content: center; /* center vertically */
-    align-items: center; 
-    padding-top: 20px;
-    flex-direction: column;
-    height: 100vh; /* full screen height */
-    background: linear-gradient(
-        to bottom,
-        rgba(124, 64, 64, 1) 0%,
-        rgba(35, 1, 44, 1) 100% 
-    );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px 60px;
+  flex-direction: column;
+  min-height: 100vh;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(124, 64, 64, 1) 0%,
+    rgba(35, 1, 44, 1) 100%
+  );
 }
 
 .head{
@@ -36,33 +37,60 @@
     margin-bottom: 40px;
 }
 
-.skills {
-    display: flex;
-    gap: 40px; /* spacing between skill items */
-    justify-content: center;
-    flex-wrap: wrap; /* wrap on smaller screens */
-    margin-bottom: 40px;
+.skillsHead {
+  font-size: 36px;
+  font-family: 'Libre Franklin', sans-serif;
+  color: white;
+  margin-bottom: 40px;
 }
 
-.skillItem {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    font-size: 1rem;
-    font-family: 'Libre Franklin', sans-serif;
+.skillGroups {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 0 20px 60px;
+}
 
-    span {
-    font-size: 0.7rem; /* smaller text */
-    margin-top: 5px;
-    opacity: 0.8; /* optional: make it a bit lighter */
+.skillGroup {
+  width: 100%;
+  text-align: center;
+
+  h3 {
+    color: #CABAA8;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Libre Franklin', sans-serif;
   }
 }
 
-.skillIcon {
-    font-size: 36px;
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-    margin-bottom: 8px;
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+
+  span {
+    color: white;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(202, 186, 168, 0.35);
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Libre Franklin', sans-serif;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: #CABAA8;
+      color: #23012c;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .skillGroups {
+    grid-template-columns: 1fr;
+  }
 }

@@ -34,32 +34,18 @@
 
 .socials {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
   margin-top: 2rem;
-  margin-left: 25px;
 
   img {
-    width: 40px; /* make them equal size */
+    width: 40px;
     height: 40px;
     transition: transform 0.3s ease;
 
     &:hover {
-      transform: scale(1.2); /* slight zoom on hover */
-    }
-  }
-  .resumeBtn {
-    padding: 0.5rem 2rem;
-    background-color: #CABAA8;
-    margin-left: 60px;
-    color: $text-color;
-    text-decoration: none;
-    border-radius: 20px;
-    font-size: 20px;
-    transition: all 0.3s ease;
-
-    &:hover {
-      background-color: $text-color;
-      color: #fff;
+      transform: scale(1.2);
     }
   }
 }

@@ -20,6 +20,7 @@ export default function Home() {
           >
             <img src={github} alt="GitHub" />
           </a>
+
           <a
             href="https://www.linkedin.com/in/kalista-singh-cs13/"
             target="_blank"
@@ -27,16 +28,9 @@ export default function Home() {
           >
             <img src={linkedin} alt="LinkedIn" />
           </a>
-          <a href="mailto:kalistasingh4@gmail.com.com">
+
+          <a href="mailto:kalistasingh4@gmail.com">
             <img src={email} alt="Email" />
-          </a>
-          <a
-            href="public/assets/images/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.resumeBtn}
-          >
-            My Resume
           </a>
         </div>
       </section>

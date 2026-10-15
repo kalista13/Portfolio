@@ -1,25 +1,44 @@
 //import { Link } from "react-router-dom";
 import styles from './Navigation.module.scss';
 import { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
 
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) setScrolled(true);
-      else setScrolled(false);
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
-  const handleScroll = (e: React.MouseEvent, id: string) => {
-    e.preventDefault();  // preventDefault() stops the browser from jumping instantly to the section
+  const handleScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string
+  ) => {
+    e.preventDefault();
+
+    if (location.pathname !== '/') {
+      navigate(`/#${id}`);
+      return;
+    }
+
     const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+
+    if (el) {
+      el.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
   };
 
   return (

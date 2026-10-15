@@ -3,7 +3,7 @@ import styles from './Footer.module.scss';
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <p className={styles.copy}>&copy; 2025 Kalista Singh</p>
+      <p className={styles.copy}>&copy; 2026 Kalista Singh</p>
 
       <div className={styles.icons}>
         <a
